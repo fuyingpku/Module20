@@ -1,6 +1,6 @@
-# Capstone Project 20.1: Initial Report and Exploratory Data Analysis (EDA)
+# Capstone Project: Final Report and Exploratory Data Analysis (EDA)
 Github code:https://github.com/fuyingpku/Module20.git
-### Overview:
+### Overview of technology in this project:
 (1) Project Organization · README file with a summary of findings and link to your Jupyter Notebook · Jupyter Notebook with headings and text appropriately formatted · Libraries are imported and aliased correctly · Code does not contain errors · No long strings of code output · Demonstrates competency with pandas · Demonstrates competency with seaborn · Variables are sensible
 
 (2) Syntax and Code Quality · Libraries are imported and aliased correctly · Code does not contain errors · No long strings of code output · Demonstrates competency with pandas · Demonstrates competency with seaborn · Variables are sensible
@@ -31,7 +31,7 @@ We will make use of the article accompanying the dataset here for more informati
 ### Determine Data Mining Goals
 （1） Data Mining Goals：Predict the HCC patient survial based on their conditions and find the correlations between different features and surival status.
 
-（2） Data Mining Success Criteria：plot the figure to cover all the features in the dataset.
+（2） Data Mining Success Criteria：plot the figure to cover all the features in the HCC dataset.
 
 ### Produce Project Plan
 （1） Project Plan：the CRISP-DM standard protocol will be carried out, in total, 16 hrs for data understanding/preparation/modeling/evaluation/deployment
@@ -54,17 +54,17 @@ Business Success Criteria is met: As a result of this model based analysis, the 
 
 With this model, it is feasbile to put in any future features and give predicted status of the HCC patients. We can further use this program to train and obtain different models for different types of cancer. 
 
-Review process: in summary, the whole process start with a small panel then overview of all the features in the dataset, remove outliers and Nan values, using graphic and correlation function to identify what are the factors contribute/correlate the survival status of HCC patients. During the analysis, it is noticed the although the model and maker also could contribute a lot of the status of the HCC patients, it is feasible that improved accurary could be built with a much larger dataset. We used the correct attributes with correct model, but we admit there is still room to improve with a much larger dataset. 
+Review process: in summary, the whole process start with a small panel then overview of all the features in the dataset, remove outliers and Nan values, using graphic and correlation function to identify what are the key factors contribute/correlate the survival status of HCC patients. During the analysis, it is noticed the although the model and maker also could contribute a lot of the status of the HCC patients, it is feasible that improved accurary could be achieved/built with a much larger dataset. We used the correct attributes with correct model, but we admit there is still room to improve the result with a much larger dataset. 
 
 Determing the next step: with the model built, we can suggest a deployment and give it a pressure test first.
 
 ### Deployment
-Plan deployment: it is a general procedure used to identify and create the model in this case. all the parameters were fixed for any repeat needed. The model itself is ready for deployment and for sure training and interface could be employed for the customers
+Plan deployment: it is a general procedure used to identify and create the model in this case. all the parameters were fixed for any repeat analysis needed. The model itself is ready for deployment and for sure training and interface could be employed by the customers
 
 Produce final report: In this project, we screened all the features, based on the avaiablity of the dataset, we narrow down factors: 'Alcohol', 'Cirrhosis : nominal', 'Hepatitis B Surface Antigen', 'Arterial Hypertension', 'Hepatitis C Virus Antibody', 'Smoking', 'Alanine transaminase ', 'Number of Nodules', 'Age at diagnosis'.
 
-The four techniques used in the analysis are K Nearest Neighbor, Logistic Regression, Decision Trees, and Support Vector Machines (SVM). In the end, SVM showed the best accuray. We also observed that Decision Trees tend to give a overfitting in this case.
+There are four techniques used in the analysis are K Nearest Neighbor, Logistic Regression, Decision Trees, and Support Vector Machines (SVM). In the end, SVM showed the best accuray. We also observed that Decision Trees tend to give the most overfitting in this case.
 
-Review project: The initial analysis and data prep went well. However, the model (including all the four models and with new features and new hyperparameters) gives only accuracy at ca. 0.7, with a database with less than 200 patients. That could be improved with better model e.g. AI based model and larger dataset with more features could be selected. A group discussion could be beneficial across the class.
+Review project: The initial analysis and data prep went well. However, the model (including all the four models and with new features and new hyperparameters) gives only accuracy at approximately 0.7, with a small database with less than 200 patients. That could be improved with better model e.g. AI based model and larger dataset with more features could be selected. A group discussion could be beneficial across the class and brainstorm an alternative strategy with deep learning as well.
 
 ​
